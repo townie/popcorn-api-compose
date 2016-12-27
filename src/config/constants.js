@@ -226,7 +226,7 @@ export const cronTime = "0 0 */6 * * *";
  * The host of the server of the database. Default is `["localhost"]`.
  * @type {Array}
  */
-export const dbHosts = ["localhost"];
+export const dbHosts = ["mongodbhost"];
 
 /**
  * The name of the database. Default is `popcorn`.
@@ -379,7 +379,7 @@ export const pageSize = 50;
  * The port on which the API will run on. Default is `5000`.
  * @type {Integer}
  */
-export const port = 5000;
+export const port = 5001;
 
 /**
  * The promise object to override the mongoose promise object. Default is `global.Promise`.

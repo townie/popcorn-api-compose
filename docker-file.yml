@@ -1,0 +1,19 @@
+
+version: 2
+
+services:
+  mongodbhost
+
+
+version: '2'
+services:
+  web:
+    image: tag
+    build: .
+    ports:
+    - "5001:5001"
+    links:
+    - mongodbhost:mongodbhost
+
+  mongodbhost:
+    image: mongo:3.0
